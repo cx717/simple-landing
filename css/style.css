@@ -1,0 +1,456 @@
+/*--------------------------------------------------------------
+# Import Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: 
+		url('../fonts/DINPro.eot'),
+		url('../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro.woff') format('woff'),
+		url('../fonts/DINPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+@font-face {
+	font-family: 'DIN Pro';
+	src: 
+		url('../fonts/DINPro-Bold.eot'),
+	  	url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-Bold.woff') format('woff'),
+		url('../fonts/DINPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src:  
+	    url('../fonts/Roboto.woff2') format('woff2'), 
+	    url('../fonts/Roboto.woff') format('woff'), 
+	    url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src:   
+	    url('../fonts/Gilroyextrabold.woff2') format('woff2'), 
+	    url('../fonts/Gilroyextrabold.woff') format('woff'), 
+	    url('../fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*--------------------------------------------------------------
+# Common
+--------------------------------------------------------------*/
+
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, header, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header, section { display: block; }
+
+.color { color: #F47821; }
+.white { color: #fff; }
+.bgcolor-first { background: #fff; }
+.bgcolor-second { background: #F7F5FA; }
+.bgcolor-footer{  background: #161616; }
+
+.text-center { text-align: center; }
+.zero-margin-left { margin-left: 0; }
+
+h1 {
+	display: block; 
+	max-width: 692px;
+	margin: 0 auto;
+			
+	font-family: DIN Pro;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 54px;
+	text-align: left;
+	letter-spacing: -0.02em;
+	
+	color: #222222;
+}
+
+h2 {
+	font-family: DIN Pro;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 50px;
+	margin: 0 auto;
+	
+	text-align: center;
+	letter-spacing: -0.02em;
+	
+	color: #000000;
+}
+
+h5 {
+	display: block;
+	font-family: DIN Pro;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+	margin-bottom: 24px;
+ 
+	color: #000000;	 
+}
+
+h6 {
+	font-family: DIN Pro;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 19px;
+	text-align: left;
+	padding-bottom: 16px;
+	
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#top { padding-top: 165px; }
+
+.slogon {
+	display: block;
+	max-width: 760px;
+	margin: 24px auto 0;
+	padding-left: 10px;
+	padding-right: 10px;
+		
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	
+	color: #4A4556;	
+}
+
+a.plus-button {
+	display: block; 
+	width: 204px;
+	height: 54px;
+	margin: 48px auto;
+}
+
+a.plus-button b {
+	position: absolute; 
+	z-index: 10;	
+	font-family: Gilroy;
+	font-size: 16px;
+	line-height: 20px;
+	margin-left: 44px;
+
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	color: #222222;	
+}
+
+a.plus-button span {
+	position: absolute;
+	z-index: 5;
+	width: 54px;
+	height: 43px;
+	border-radius: 50%;
+	background: #f9f9f9;
+	text-align: center;
+	font-size: 24px;
+	margin-top: -18px;
+	padding-top: 11px;
+	font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+#home { padding-bottom: 80px; }
+
+#rectangle {
+	background: url(../images/Rectangle.png);
+	background-size: cover;
+	height: calc(100vw * 600 / 1440);
+}
+
+.what-we-do {
+	display: flex;
+	max-width: 972px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.what-we-do .item { 
+	flex: 1;
+	text-align: left;
+	padding: 50px 60px;
+	
+	font-family: DIN Pro;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: -0.03em;
+	
+	border-bottom: 1px solid #F7F5FA;
+	
+	color: #222222;
+}
+  
+.what-we-do.top { margin-top: -7%; }  
+  
+.what-we-do .one, 
+.what-we-do .two  { border-bottom: 2px solid #F7F5FA; }  
+ 
+.what-we-do .one, 
+.what-we-do .three { border-right: 1px solid #F7F5FA; } 
+
+.what-we-do .two, 
+.what-we-do .four { border-left: 1px solid #F7F5FA; } 
+
+@media all and (max-width: 992px){
+	.what-we-do.top { margin-top: 0px; }  
+}
+
+@media all and (max-width: 768px){
+	.what-we-do.top { margin-top: 20px; }  
+	.what-we-do,
+	.what-we-do .item { display: block; }	
+	.what-we-do .item { 
+		border: none; 
+		border-bottom: 2px solid #F7F5FA; 
+		padding: 20px 30px;	
+	} 	
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+#about {
+	max-width: 773px;
+	margin: 0 auto;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	padding-left: 20px;
+	padding-right: 20px;	
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	
+	color: #4E4D53;	
+}
+
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+
+#why-us {
+	padding-top: 120px;
+	padding-bottom: 160px;
+	padding-left: 20px;
+	padding-right: 20px;
+		
+	background: #F7F5FA;	
+}	
+
+#why-us-container {
+	display: flex;
+	max-width: 1050px;
+	margin: 40px auto 0;	
+}
+
+#why-us-container .item { 
+	flex: 1;
+	text-align: left;	
+	font-family: Roboto; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	
+	color: #4E4D53;
+}
+
+#why-us-container .one { padding-right: 20px; }
+
+#why-us-container .two {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#why-us-container .three { padding-left: 20px; }
+
+#why-us-container .item embed { 
+	display: block; 
+	width: 52px; 
+	height: 52px; 
+	margin-bottom: 15px;
+} 
+
+#why-us-container h5:after {
+	content: '';
+	display: block;
+	margin-top: 26px;
+	width: 24px;
+	height: 2px;	
+	
+	background: #F47821;
+}
+
+@media all and (max-width: 768px){
+	
+	#why-us-container,
+	#why-us-container .item { 
+		display: block; 
+		padding-right: 0px;
+		padding-left: 0px;	
+		margin-top: 30px;	
+	}	
+}
+
+
+/*--------------------------------------------------------------
+# Fill The Form
+--------------------------------------------------------------*/
+
+#fill-the-form {
+	padding-top: 100px;
+	padding-bottom: 120px;	
+}
+
+#fill-the-form form { margin-top: 70px; }
+
+#fill-the-form form div {
+	max-width: 670px;
+	margin: 0 auto 60px; 
+}
+
+#fill-the-form form span.label {
+	display: block;
+	font-family: DIN Pro;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 25px;	
+	margin-left: 50px;
+	
+	color: #fff;
+}
+
+#fill-the-form form input,
+#fill-the-form form textarea {
+	width: 570px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	margin-top: 8px;
+	margin-left: 50px;
+	border: none;
+	border-bottom: 2px solid #2c2d2d;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 35px;
+	
+	color: #fff;			
+}
+
+#fill-the-form form textarea { min-height: 100px; }
+
+#fill-the-form form input::-moz-placeholder,
+#fill-the-form form input::-webkit-input-placeholder,
+#fill-the-form form input:-ms-input-placeholder,
+#fill-the-form form input::-ms-input-placeholder,
+#fill-the-form form input::placeholder { color: #5c5c5c; } 
+
+#fill-the-form form span.num {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	
+	position: absolute;
+	width: 64px;
+	height: 44px;
+	padding-top: 20px;
+	border: 1px solid #2c2d2d;
+	border-radius: 50%;
+	margin-left: -45px;
+	margin-top: -19px;
+	text-align: center;
+}
+
+#fill-the-form form button {	
+	font-family: Gilroy;
+	font-size: 14px;
+	line-height: 17px;
+
+	letter-spacing: 0.04em;
+	text-transform: uppercase;	
+	
+	display: block;
+	width: 570px;
+	height: 54px;
+	border-radius: 27px;
+	margin-left: 50px;
+}
+
+#fill-the-form form button:hover { cursor: pointer; background: #ddd; }
+
+#fill-the-form form div.error {
+	font-family: Roboto; 
+	margin-top: -50px;
+	font-size: 18px;
+	text-align: center;
+	
+	color: #dd5011;
+}
+
+@media all and (max-width: 992px){
+	
+	#fill-the-form form input,
+	#fill-the-form form textarea,
+	#fill-the-form form span.label,
+	#fill-the-form form button {
+		margin-left: 100px;
+	}
+	
+	#fill-the-form form span.num { margin-left: 0px; }	
+}
+
+@media all and (max-width: 768px){
+	
+	#fill-the-form form div { max-width: 500px; }
+	
+	#fill-the-form form button { width: 300px; }
+	
+	#fill-the-form form input,
+	#fill-the-form form textarea,
+	#fill-the-form form span.label {
+		width: 400px;
+		margin-left: 55px;
+	}	
+	
+	#fill-the-form form span.num { border: none; }
+}
