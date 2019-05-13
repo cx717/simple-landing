@@ -65,10 +65,20 @@ function validateForm(event) {
 	const errorMessages = document.querySelectorAll('.error');
 
 	if( errorMessages.length > 0 ) {  
-		
+
+
+	/*	ie не поддерживает конструкцию	array.forEach
+			
 		errorMessages.forEach(function(element) {
 			element.parentNode.removeChild(element)
 		});									  	
+	*/	
+		
+		for(var i = 0; i < errorMessages.length; i++ ) {
+			errorMessages[i].parentNode.removeChild(errorMessages[i]);
+			console.log(errorMessages[i]);
+			console.log(i);
+		}	
 	}
 	 
 	const name = document.getElementById('name');
